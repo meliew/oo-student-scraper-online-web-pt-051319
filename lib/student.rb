@@ -21,11 +21,6 @@ class Student
     students_array.each do |student_info|
       Student.new(student_info)
     end
-
-#use the Scraper class
-#array of students
-#we want to create a new instance of a student for each member of the array
-#we want them to have their proper name and location, taken from the hash
   end
 
   def add_student_attributes(attributes_hash)
