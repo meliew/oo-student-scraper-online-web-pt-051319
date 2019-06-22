@@ -18,8 +18,8 @@ class Student
 
   def self.create_from_collection(students_array)
 
-    students_array.each do |student|
-      Scraper.scrape_index_page(index_url)
+    students_array.each do |student_info|
+      Student.new(student_info) 
     end
 
 #use the Scraper class
