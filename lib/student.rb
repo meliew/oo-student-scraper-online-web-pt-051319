@@ -19,7 +19,7 @@ class Student
   def self.create_from_collection(students_array)
 
     students_array.each do |student_info|
-      Student.new(student_info) 
+      Student.new(student_info)
     end
 
 #use the Scraper class
@@ -33,6 +33,8 @@ class Student
   end
 
   def self.all
+
+    @@all
 
   end
 end
